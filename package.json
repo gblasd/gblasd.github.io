@@ -1,7 +1,9 @@
 {
   "private": true,
-  "homepage": "https://www.adamalston.com/",
+  "homepage": "https://gblasd.github.io",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -12,6 +14,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-tsparticles": "^1.43.1",
