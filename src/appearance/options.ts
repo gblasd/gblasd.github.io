@@ -9,7 +9,7 @@ export const options: ISourceOptions = {
   },
   particles: {
     number: {
-      value: 100,
+      value: 150,
       density: {
         enable: true,
         area: 800,
@@ -51,7 +51,7 @@ export const options: ISourceOptions = {
       },
     },
     size: {
-      value: 4,
+      value: 6,
       random: {
         enable: true,
         minimumValue: 2,

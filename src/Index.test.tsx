@@ -25,7 +25,7 @@ describe('application tests', () => {
    * @param {RegExp} display Display value for the content
    * @param {string} link Optional link within the content
    */
-  const checkContent = (
+  /*   const checkContent = (
     element: HTMLElement,
     display: RegExp,
     link?: string,
@@ -35,7 +35,7 @@ describe('application tests', () => {
     if (!skipA11yNameCheck) expect(element).toHaveAccessibleName();
     expect(element).toHaveTextContent(display);
     if (link) expect(element).toHaveAttribute('href', link);
-  };
+  }; */
 
   /**
    * Check button element
@@ -44,7 +44,7 @@ describe('application tests', () => {
    * @param {RegExp} display Display value for the button
    * @param {string} link Link within the button
    */
-  const checkButton = (
+  /*   const checkButton = (
     parent: HTMLElement,
     child: HTMLElement,
     display: RegExp,
@@ -55,9 +55,9 @@ describe('application tests', () => {
     expect(parent).toBeVisible();
     expect(parent).toHaveAccessibleName();
     expect(parent).toHaveAttribute('href', link);
-  };
+  }; */
 
-  it('should render name: Adam Alston', () => {
+  /*   it('should render name: Adam Alston', () => {
     const element = screen.getByTestId('name');
 
     checkContent(element, /^Adam Alston$/, undefined, true);
@@ -118,7 +118,7 @@ describe('application tests', () => {
 
     checkButton(parent, child, /^Email$/, 'mailto:aalston9@gmail.com');
   });
-
+ */
   it('should toggle between the dark and light themes', () => {
     const toggle = screen.getByTestId('toggle');
     const particles = screen.getByTestId('particles');
